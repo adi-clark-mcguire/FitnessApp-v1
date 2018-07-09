@@ -221,14 +221,26 @@
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="133.69565217391306"/>
         </scene>
-        <!--View Controller-->
+        <!--Favourites-->
         <scene sceneID="2AH-FP-pWv">
             <objects>
-                <viewController id="yv1-CJ-yqD" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="sbFavourites" title="Favourites" id="yv1-CJ-yqD" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Scx-uz-7hP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Top bar background blank" translatesAutoresizingMaskIntoConstraints="NO" id="ef8-BD-O1d">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ef8-BD-O1d" secondAttribute="height" multiplier="414:65" id="6e3-mw-5zi"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Dunbell" translatesAutoresizingMaskIntoConstraints="NO" id="4Ok-hl-n3O">
+                                <rect key="frame" x="20" y="20" width="50" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95294117647058818" green="0.95294117647058818" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="fh8-pX-bHM"/>
                     </view>
                 </viewController>
@@ -239,21 +251,40 @@
         <!--Account-->
         <scene sceneID="o7l-zf-UbW">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" title="Account" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="gKM-iH-bhx" sceneMemberID="viewController">
+                <pageViewController autoresizesArchivedViewToFullSize="NO" title="Account" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="gKM-iH-bhx" customClass="PageViewController" customModule="fitnessapp_v2" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="iwy-ns-odi"/>
                 </pageViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oJK-YD-FOX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1858" y="-563"/>
         </scene>
-        <!--View Controller-->
+        <!--Calendar-->
         <scene sceneID="N8z-hK-t5d">
             <objects>
-                <viewController id="0z5-sU-ug2" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="sbCalendar" title="Calendar" id="0z5-sU-ug2" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="T5y-GA-Jpu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Top bar background blank" translatesAutoresizingMaskIntoConstraints="NO" id="Ukq-Xn-Dxg">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Ukq-Xn-Dxg" secondAttribute="height" multiplier="207:35" id="10U-Sn-e6O"/>
+                                    <constraint firstAttribute="width" secondItem="Ukq-Xn-Dxg" secondAttribute="height" multiplier="414:65" constant="-31.846153846153811" id="Hq2-17-Jg9"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Dunbell" translatesAutoresizingMaskIntoConstraints="NO" id="pYg-PT-vOM">
+                                <rect key="frame" x="20" y="20" width="50" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ukq-Xn-Dxg" firstAttribute="leading" secondItem="y9t-H5-x63" secondAttribute="leading" id="8nJ-Iv-SBC"/>
+                            <constraint firstItem="Ukq-Xn-Dxg" firstAttribute="top" secondItem="T5y-GA-Jpu" secondAttribute="top" id="WGF-HZ-tIU"/>
+                            <constraint firstItem="Ukq-Xn-Dxg" firstAttribute="trailing" secondItem="y9t-H5-x63" secondAttribute="trailing" id="m5O-vR-vj8"/>
+                            <constraint firstItem="Ukq-Xn-Dxg" firstAttribute="width" secondItem="Ukq-Xn-Dxg" secondAttribute="height" multiplier="414:65" constant="-31.846153846153811" id="vo9-GV-dgO"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="y9t-H5-x63"/>
                     </view>
                 </viewController>
@@ -261,14 +292,33 @@
             </objects>
             <point key="canvasLocation" x="1913" y="-1296"/>
         </scene>
-        <!--View Controller-->
+        <!--Settings-->
         <scene sceneID="jzs-dQ-5qN">
             <objects>
-                <viewController id="dsT-iE-027" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="sbSettings" title="Settings" id="dsT-iE-027" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YpI-ur-5sN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Top bar background blank" translatesAutoresizingMaskIntoConstraints="NO" id="X6l-VF-IkI">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="X6l-VF-IkI" secondAttribute="height" multiplier="414:65" id="Gs4-ES-m8z"/>
+                                    <constraint firstAttribute="width" secondItem="X6l-VF-IkI" secondAttribute="height" multiplier="207:35" id="dmb-p6-LSu"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Dunbell" translatesAutoresizingMaskIntoConstraints="NO" id="EhC-42-f1r">
+                                <rect key="frame" x="20" y="20" width="50" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="X6l-VF-IkI" firstAttribute="leading" secondItem="aDp-oo-EWA" secondAttribute="leading" id="Hln-VX-Plq"/>
+                            <constraint firstItem="X6l-VF-IkI" firstAttribute="trailing" secondItem="aDp-oo-EWA" secondAttribute="trailing" id="NvR-Hg-LH9"/>
+                            <constraint firstItem="X6l-VF-IkI" firstAttribute="width" secondItem="X6l-VF-IkI" secondAttribute="height" multiplier="414:65" id="jDd-KF-pu8"/>
+                            <constraint firstItem="X6l-VF-IkI" firstAttribute="top" secondItem="YpI-ur-5sN" secondAttribute="top" id="lYM-GW-jCx"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="aDp-oo-EWA"/>
                     </view>
                 </viewController>
@@ -410,5 +460,6 @@
         <image name="Dunbell" width="147" height="97"/>
         <image name="First line" width="122" height="2"/>
         <image name="Search Bar Blank" width="414" height="229"/>
+        <image name="Top bar background blank" width="414" height="72"/>
     </resources>
 </document>
